@@ -2,7 +2,6 @@
 # **Author:** __Shahmeer Khan (GamerBOi801)__
 ## Version 1.0
 ## Date: 10/06/2024
-### VIDEO DEMO <https://youtu.be/INz1u0VocV0>
 
 ## Geting Started:
 ####  My Project **CoinKeeper** is a webApp made in Flask (python web framework) and helps individuals track their finances  by inputting their Expenses, Incomes, Investments Into the tracker. In Addtion to this users can keep track of their Investments, income and expenses by reviewing their logs and seeing each"s grpahical representation which was made possible by using a JavaScript FrameWork called chart.js. I utilised the Functions from the helpers file from the pset9 Finance file, the layout and the db from the same Finance pset. and the cs50 python library for the SQL. Moreover I used AI to help me design the frontend of CoinKeeper. 
