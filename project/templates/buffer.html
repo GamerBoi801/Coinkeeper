@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-12">
+      <!--Table-->
+      <table class="table table-responsive" style="width: 100%;">
+        <thead>
+          <tr>
+                <th>User_id</th>
+                <th>Income/Transaction ID</th>
+                <th>Amount $(USD)</th>
+                <th>Date (YYYY-MM-DD)</th>  
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in rows %}
+          <tr>
+                <td>{{ id }}</td>
+                <td>{{ row["income_id"] }}</td>
+                <td>${{ row["amount"] }}</td>
+                <td>{{ row["date"] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6 mt-2">
+      <!--Graph--> 
+      <canvas id="linechart" width="auto" height="500"></canvas>
+      <script>
+        var ctx = document.getElementById("linechart").getContext("2d");
+        var linechart = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: {{ dates | safe }}, //x-axis list
+            datasets: [
+              {
+                label: "Investment History", //legend
+                data: {{ amount | safe }}, // y-axis values
+                fill: false,
+                borderColor: "rgb(0, 0, 128)", //color of groph
+                lineTension: 0.1  //line thickness
+              }
+            ]
+          },
+          options: {
+            responsive: false
+          }
+        });
+      </script>
+</div>

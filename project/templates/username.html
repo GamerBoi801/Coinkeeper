@@ -1,0 +1,46 @@
+<!-- change_password.html -->
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Password
+{% endblock %}
+
+{% block main %}
+    <!-- change_password.html -->
+    <h1 class="text-center">Change Username</h1>
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="/username" method="post">
+                        <!-- Username Change Form -->
+                        <div class="mb-3">
+                            <label for="old_username" class="form-label">Current Username:</label>
+                            <input type="text" id="old_username" name="old_username" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label for="new_username" class="form-label">New Username:</label>
+                            <input type="text" id="new_username" name="new_username" class="form-control w-100">
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirm_username" class="form-label">Confirm New Username:</label>
+                            <input type="text" id="confirm_username" name="confirm_username" class="form-control w-100">
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Change Username</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% if success %}
+        <!-- Green Success Popup -->
+        <div class="alert alert-success" role="alert" style="padding: 10px; margin-bottom: 10px;">
+            Username change successful!
+        </div>
+    {% endif %}
+<!-- Page Footer Here-->
+<footer class="bg-primary text-white py-3 fixed-bottom">
+    <div class="container text-center">
+        <p>&copy; 2024 Coinkeeper</p>
+    </div>
+</footer>
+
+{% endblock %}

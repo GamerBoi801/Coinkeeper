@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Income
+{% endblock %}
+
+{% block main %}
+<h1 class="text-center">Income Result</h1>
+<div class="row mt-3">
+    <div class="col-md-6 offset-md-3">
+        <table class="table table-bordered">
+            <tr>
+                <td><strong>Income:</strong></td>
+                <td>${{ income }}</td>
+            </tr>
+            <tr>
+                <td><strong>Tax Percentage:</strong></td>
+                <td>{{ tax_percentage }}%</td>
+            </tr>
+            <tr>
+                <td><strong>Tax Amount:</strong></td>
+                <td>${{ tax_amount }}</td>
+            </tr>
+            <tr>
+                <td><strong>Income After Taxes:</strong></td>
+                <td>${{ income_after_tax }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Success Modal -->
+<div class="alert alert-success">
+  <strong>Success!</strong> Your New Bank Balance Is <strong>${{ new_balance }}.</strong>
+</div>
+
+  <!-- Page Footer Here-->
+<footer class="bg-primary text-white py-3 fixed-bottom">
+  <div class="container text-center">
+      <p>&copy; 2024 CoinKeeper</p>
+  </div>
+</footer>
+
+{% endblock %}

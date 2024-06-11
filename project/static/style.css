@@ -1,0 +1,96 @@
+.my-style {
+    font-family: Arial, sans-serif; /* Choose a modern and readable font */
+    font-size: 2.5em;  /* Adjust font size for desired prominence */
+    font-weight: bold;  /* Make the text bold for emphasis */
+    text-align: center; /* Center the text for visual balance */
+    color: #333; /* Set a dark and readable color */
+    margin-top: 50px; /* Add some margin from the top */
+    margin-bottom: 20px; /* Add some margin from the bottom */
+}
+.my-style:after {  /* Add an optional underline for further emphasis */
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #f00; /* Change color as desired */
+    margin: 0 auto;
+    margin-top: 10px; /* Adjust margin for spacing */
+}
+
+.heading {   /* font used for heading */
+    font-style: underline;
+    font-weight: bold;
+}
+
+/* styles.css */
+.password-field {
+    position: relative;
+}
+
+.password-field input[type="password"] {
+    padding-right: 2.5rem;
+}
+
+.password-field button.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.password-field button.password-toggle:focus {
+    outline: none;
+}
+
+.password-field button.password-toggle i {
+    font-size: 1.2rem;
+    color: #999; /* Default color for the eye icon */
+}
+
+.password-field button.password-toggle.show i {
+    color: #007bff; /* Color when password is visible */
+}
+
+/* Define the heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif; /* Use Open Sans font */
+    font-weight: bold; /* Make the heading bold */
+    color: #333; /* Use a dark color for the heading */
+    text-align: center; /* Center the heading */
+    margin-bottom: 1rem; /* Add a margin below the heading */
+}
+
+/* Define the heading sizes */
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4, h5, h6 {
+    font-size: 1.5rem;
+}
+
+/* Add a hover effect to the headings */
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+/* my slogan style */
+.slogan {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

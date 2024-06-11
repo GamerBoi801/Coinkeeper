@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block main %}
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">CoinKeeper</a>
+            <div class="d-flex align-items-center">
+                <div class="me-3">
+                    <span class="text-white">Bank Balance:</span>
+                    <span class="text-white fw-bold">$ {{ bank }}</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Welcome <strong>{{ username }}</strong> to CoinKeeper</h1>
+        <p class="slogan">Your Guide to Financial Freedom.</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Track Transactions</h3>
+                <p>Monitor your Transactions and stay on top of your budget.</p>
+                <a href="/history" class="btn btn-primary">View History</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Manage Income</h3>
+                <p>Keep track of your income and plan for the future.</p>
+                <a href="/income-before" class="btn btn-primary">View Income</a>
+            </div>
+            <div class="col-md-4">
+                <h3>Manage Investments</h3>
+                <p>Analyze your financial Investments.</p>
+                <a href="/income-history" class="btn btn-primary">View Data</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+    
+    
+<!-- Page Footer Here-->
+<footer class="bg-primary text-white py-3 fixed-bottom">
+    <div class="container text-center">
+        <p>&copy; 2024 CoinKeeper</p>
+    </div>
+  </footer>    
+
+{% endblock %}

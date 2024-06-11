@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Investements
+{% endblock %}
+
+{% block main %}
+<h1>Investments</h1>
+<form action="/inv" method="POST" class="row g-3">
+    <!--entering investment amounts-->
+    <div class="col-md-6">
+        <label for="investment" class="form-label">Investment Amount (USD):</label>
+        <div class="input-group">
+          <span class="input-group-text">$</span>
+          <input type="number" class="form-control" id="investment" name="investment" placeholder="Enter your Investment Amount" min="0" required>
+        </div>
+      </div>
+
+    <!-- Entering the return from Investment -->
+    <div class="col-md-6">
+      <label for="return" class="form-label">Returns (%):</label>
+      <div class="input-group">
+        <span class="input-group-text">$</span>
+        <input type="number" class="form-control" id="return" name="return" placeholder="Enter your Investment returns" min="0" max="100" required>
+      </div>
+    </div>
+
+      <!--Entering starting investment date-->
+      <div class="col-md-6">
+        <label for="date" class="form-label">Enter Starting Date (YYYY-MM-DD):</label>
+        <input type="date" class="form-control" id="start-date" name="start-date" required>
+      </div>
+
+      <!-- Entering Ending Investment Date-->
+      <div class="col-md-6">
+        <label for="date" class="form-label">Enter Ending Date (YYYY-MM-DD):</label>
+        <input type="date" class="form-control" id="end-date" name="end-date" required>
+      </div>
+
+
+      <!--Entering type of investments-->
+      <div class="col-md-6">
+        <label for="type" class="form-label">Type:</label>
+        <select class="form-select" id="type" name="type" required>
+            <option value="Stocks">Stocks</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="Mutual Funds">Mutual Funds</option>
+            <option value="Bonds">Bonds</option>
+        </select>
+    </div>
+
+      <!--Submit button-->
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Update</button>
+      </div>
+</form>
+<!-- Page Footer Here-->
+<footer class="bg-primary text-white py-3 fixed-bottom">
+  <div class="container text-center">
+      <p>&copy; 2024 CoinKeeper</p>
+  </div>
+</footer>
+
+{% endblock %}

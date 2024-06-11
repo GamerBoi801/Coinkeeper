@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Expenses
+{% endblock %}
+
+{% block main %}
+<!-- TODO-->
+<h1 class="text-center">Expense Result</h1>
+<div class="row mt-3">
+    <div class="col-md-6 offset-md-3">
+        <table class="table table-bordered">
+            <tr>
+                <td><strong>Expense Amount:</strong></td>
+                <td>${{ amount }}</td>
+            </tr>
+            <tr>
+                <td><strong>Category:</strong></td>
+                <td>{{ category }}</td>
+            </tr>
+            <tr>
+                <td><strong>Date:</strong></td>
+                <td>{{ date }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!-- Success Modal -->
+<div class="alert alert-success">
+    <strong>Success!</strong> Your New Bank Balance Is <strong>${{ new_balance }}.</strong>
+  </div>
+
+  
+<!-- Page Footer Here-->
+<footer class="bg-primary text-white py-3 fixed-bottom">
+    <div class="container text-center">
+        <p>&copy; 2024 CoinKeeper</p>
+    </div>
+</footer>
+{% endblock %}

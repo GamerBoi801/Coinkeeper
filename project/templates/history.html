@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+<!-- Headings-->
+<h1 class="text-center">Track Your Transactions</h1>
+
+<!-- Indiviual buttons -->
+<div class="row">
+   <div class="col-md-4">
+        <h3 class="text-center">Income</h3>
+        <a href="/income-history" class="btn btn-primary">View Income logs</a>
+   </div>
+   
+   <div class="col-md-4">
+        <h3 class="text-center">Investment</h3>
+        <a href="/investment-history" class="btn btn-primary">View Investments</a>
+   </div>
+
+    <div class="col-md-4">
+        <h3 class="text-center">Expenses</h3>
+        <a href="/expenses-history" class="btn btn-primary">View Expenses</a>
+    </div>   
+</div>
+
+<!-- Page Footer Here-->
+<footer class="bg-primary text-white py-3 fixed-bottom">
+    <div class="container text-center">
+        <p>&copy; 2024 CoinKeeper</p>
+    </div>
+</footer>
+
+{% endblock %}

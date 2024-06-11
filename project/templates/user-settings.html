@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User Settings
+{% endblock %}
+
+{% block main %}
+    <!-- settings.html -->
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="text-center" class="heading">Account Settings</h2>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a href="/username" class="text-decoration-none">Change Username</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="/password" class="text-decoration-none">Change Password</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Footer Here-->
+<footer class="bg-primary text-white py-3 fixed-bottom">
+    <div class="container text-center">
+        <p>&copy; 2024 CoinKeeper</p>
+    </div>
+</footer>
+
+{% endblock %}
