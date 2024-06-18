@@ -1,5 +1,5 @@
 # **Coinkeeper**
-# **Author:** __Shahmeer Khan (GamerBOi801)__
+# **Author:** MSK (GamerBOi801)__
 ## Version 1.0
 ## Date: 10/06/2024
 
@@ -8,9 +8,9 @@
 
 #### **Homepage:** After the user presents their creditionals they are redirected to the home screen where the user is greeted by the app and their bank balance is shown on the top right side. The Homepage gives the user 3 options : First the page to view their Transaction History Secondly, to manage their income and third to View their Investment History.
 
-### **Features:** Coinkeeper is equipped with a User Friendly  Interface and contains the features to Manage, Record, Display in a a graphical view their Past and Future incomes, Investments and Expenses. Furthermore it  allows the users to change their Username and Passwords in the Account Settings page.
+#### **Features:** Coinkeeper is equipped with a User Friendly  Interface and contains the features to Manage, Record, Display in a a graphical view their Past and Future incomes, Investments and Expenses. Furthermore it  allows the users to change their Username and Passwords in the Account Settings page.
 
-### **History Features:** Another Feature is the History Page that allows users to track what transactions they have made into the app, For example How many investments they have made it's durations and what type etc. it shows all of the records in a tabular form and then shows it graphically just south of the table, with date invested on the x-axis and the amount invested on each repsective date on the y-axis in the form of USD. 
+#### **History Features:** Another Feature is the History Page that allows users to track what transactions they have made into the app, For example How many investments they have made it's durations and what type etc. it shows all of the records in a tabular form and then shows it graphically just south of the table, with date invested on the x-axis and the amount invested on each repsective date on the y-axis in the form of USD. 
 
 ### I made this project since it helps a busy individuals provide a comprehensive view of one's spending habit making it easier to identify areas where they can cut costs or stay within one's budget Moreover it can enable people to make informed decisions.
 
