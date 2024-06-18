@@ -1,5 +1,5 @@
 # **Coinkeeper**
-# **Author:** MSK (GamerBOi801)__
+# **Author:**  __MSK(GamerBOi801)__
 ## Version 1.0
 ## Date: 10/06/2024
 
@@ -12,7 +12,7 @@
 
 #### **History Features:** Another Feature is the History Page that allows users to track what transactions they have made into the app, For example How many investments they have made it's durations and what type etc. it shows all of the records in a tabular form and then shows it graphically just south of the table, with date invested on the x-axis and the amount invested on each repsective date on the y-axis in the form of USD. 
 
-### I made this project since it helps a busy individuals provide a comprehensive view of one's spending habit making it easier to identify areas where they can cut costs or stay within one's budget Moreover it can enable people to make informed decisions.
+#### I made this project since it helps a busy individuals provide a comprehensive view of one's spending habit making it easier to identify areas where they can cut costs or stay within one's budget Moreover it can enable people to make informed decisions.
 
 ## Database Schema _(finance.db)_ 
 ### User (stores the user info)
